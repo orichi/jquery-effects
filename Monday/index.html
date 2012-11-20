@@ -59,10 +59,24 @@
 			color: #000;
 		}
 		div.sub_div{
-			position: absolute;
-			background: #000;
-			left: 100px;
 			display: none;
+		}
+		div.content{
+			width: auto;
+		}
+		div.content div.title_content{
+			float: left;
+			width: 60px;
+		}
+		div.content ul.content_links{
+			width: 200px;
+			padding: 0;
+			margin: 0;
+			float: left;
+		}
+		div.content ul.content_links li{
+			float: left;
+			list-style: none;
 		}
 		div.content{
 			float: left;
@@ -82,7 +96,14 @@
 			<ul class="show">
 				<li><a href="#" class="item1" id="no1">menu1</a>
 					<div class="sub_div">
-						asdasdasd
+						<div class='title_content'>
+							<a href="#">title1</a>
+						</div>
+						<ul class="content_links">
+							<li><a href="#">asdasdasd</a></li>
+							<li><a href="#">asdasdasd</a></li>
+							<li><a href="#">asdasdasd</a></li>
+						</ul>
 					</div>
 				</li>
 				<li><a href="#" class="item1" id="no2">menu1</a>
@@ -99,6 +120,8 @@
 					<div class="sub_div">
 						menasdiqwasdasd
 					</div>
+				</li>
+				<li><a href="#" class="item1" id="no4">menu1</a>
 				</li>
 			</ul>
 			<div class="content"></div>
